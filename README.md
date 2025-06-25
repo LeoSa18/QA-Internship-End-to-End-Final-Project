@@ -1,1 +1,3 @@
-# QA-Internship-End-to-End-Final-Project
+# 🧪 Practice Software Testing - Final Project
+
+## 📁 Estructura del Proyecto
