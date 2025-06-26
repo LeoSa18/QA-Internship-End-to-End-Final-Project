@@ -11,6 +11,7 @@ Este proyecto fue desarrollado como parte del desafío final del Internship de Q
 
 ## 📁 Estructura del Proyecto
 /manual-tests # Casos de prueba en formato Gherkin 
+
 /tests/pages # Contiene las Páginas del POM 
 
 ## 🚀 Cómo Ejecutar los Tests
@@ -20,6 +21,7 @@ npx playwright test
 
 ## 📊 Generar Reporte Allure
 npx allure generate ./allure-results --clean -o ./allure-report
+
 npx allure open ./allure-report
 
 ## 📝 Autores
