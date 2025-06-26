@@ -1,0 +1,26 @@
+{
+  "name": "qa-internship-end-to-end-final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoSa18/QA-Internship-End-to-End-Final-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LeoSa18/QA-Internship-End-to-End-Final-Project/issues"
+  },
+  "homepage": "https://github.com/LeoSa18/QA-Internship-End-to-End-Final-Project#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^24.0.4"
+  }
+}
