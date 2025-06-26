@@ -1,0 +1,11 @@
+Scenario: Pagination is hidden when product count does not exceed page size
+  Given there are <product_count> products in the catalog
+  And the catalog page size is configured as <page_size>
+  When the shopper opens the home page
+  Then the shopper should see <product_count> products
+  And pagination controls should not be visible
+
+Examples:
+  | product_count | page_size |
+  | 5             | 9         |
+  | 8             | 9         |

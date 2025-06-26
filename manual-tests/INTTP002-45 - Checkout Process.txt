@@ -1,0 +1,27 @@
+Feature: Secure checkout access
+  Scenario: Redirect to login page if not logged in
+    Given the customer is on the Cart step on the Checkout Page and not logged in
+    When the customer clicks the "Proceed to checkout" button
+    Then the customer should be redirected to the login step
+
+
+Feature: Shipping details form
+  Scenario: Address fields reflect registration data
+    Given the customer is logged in and on the Billing Address step on the Checkout Page
+    When the address form is displayed
+    Then all mandatory fields completed during registration should be pre-filled with the customer's registration data
+    And any mandatory fields that were left empty during registration should be displayed as empty input fields
+
+
+Feature: Address form validation
+  Scenario: Disable "Proceed to checkout" button when address fields are incomplete
+    Given the customer is logged in and is on the Billing Address step on the Checkout Page
+    And one or more mandatory address fields are empty
+    Then the "Proceed to checkout" button should be disabled
+
+
+Feature: Payment method validation
+  Scenario: Validation message if no payment method is selected
+    Given The customer is on the Payment step on the Checkout Page
+    When the customer tries to proceed without selecting a payment method
+    Then the customer should see the validation message “Payment method is required”

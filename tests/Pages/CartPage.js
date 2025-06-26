@@ -56,3 +56,5 @@ class CartPage {
         return await this.ProductTotal.textContent();
     }
 }
+
+module.exports = { CartPage };
