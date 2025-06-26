@@ -1,0 +1,86 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Practice Software Testing - Toolshop":
+    - /url: /
+    - img
+  - menubar "Main menu":
+    - menuitem "Home":
+      - link "Home":
+        - /url: /
+    - menuitem "Categories":
+      - button "Categories"
+    - menuitem "Contact":
+      - link "Contact":
+        - /url: /contact
+    - menuitem "Sign in":
+      - link "Sign in":
+        - /url: /auth/login
+    - menuitem "cart":
+      - link "cart":
+        - /url: /checkout
+        - text: "1"
+- figure "Photo by Helinton Fantin on Unsplash.":
+  - img "Combination Pliers"
+  - text: Photo by
+  - link "Helinton Fantin":
+    - /url: https://unsplash.com/@fantin
+  - text: "on"
+  - link "Unsplash":
+    - /url: https://unsplash.com/photos/W8BNwvOvW4M
+  - text: .
+- heading "Combination Pliers" [level=1]
+- paragraph: Pliers ForgeFlex Tools
+- text: $14.15
+- paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra felis nec pellentesque feugiat. Donec faucibus arcu maximus, convallis nisl eu, placerat dolor. Morbi finibus neque nec tincidunt pharetra. Sed eget tortor malesuada, mollis enim id, condimentum nisi. In viverra quam at bibendum ultricies. Aliquam quis eros ex. Etiam at pretium massa, ut pharetra tortor. Sed vel metus sem. Suspendisse ac molestie turpis. Duis luctus justo massa, faucibus ornare eros elementum et. Vestibulum quis nisl vitae ante dapibus tempor auctor ut leo. Mauris consectetur et magna at ultricies. Proin a aliquet turpis.
+- button "Decrease quantity"
+- text: Quantity
+- spinbutton "Quantity": "1"
+- button "Increase quantity"
+- button "Add to cart"
+- button "Add to favourites"
+- separator
+- heading "Related products" [level=2]
+- link "Pliers Pliers More information":
+  - /url: /product/01JYP5637S4K2MFZT3YQN3AZF1
+  - img "Pliers"
+  - heading "Pliers" [level=5]
+  - link "More information":
+    - /url: "#"
+- link "Bolt Cutters Bolt Cutters More information":
+  - /url: /product/01JYP5637VQQ569XPV40GK6527
+  - img "Bolt Cutters"
+  - heading "Bolt Cutters" [level=5]
+  - link "More information":
+    - /url: "#"
+- link "Long Nose Pliers Long Nose Pliers More information":
+  - /url: /product/01JYP5637XHFTXQR8CMP2S9TR0
+  - img "Long Nose Pliers"
+  - heading "Long Nose Pliers" [level=5]
+  - link "More information":
+    - /url: "#"
+- link "Slip Joint Pliers Slip Joint Pliers More information":
+  - /url: /product/01JYP5637ZC3MW68WS6KNGHPN4
+  - img "Slip Joint Pliers"
+  - heading "Slip Joint Pliers" [level=5]
+  - link "More information":
+    - /url: "#"
+- paragraph:
+  - text: This is a DEMO application (
+  - link "GitHub repo":
+    - /url: https://github.com/testsmith-io/practice-software-testing
+  - text: ), used for software testing training purpose. |
+  - link "Support this project":
+    - /url: https://testwithroy.com/b/support
+  - text: "|"
+  - link "Privacy Policy":
+    - /url: /privacy
+  - text: "| Banner photo by"
+  - link "Barn Images":
+    - /url: https://unsplash.com/@barnimages
+  - text: "on"
+  - link "Unsplash":
+    - /url: https://unsplash.com/photos/t5YUoHW6zRo
+  - text: .
+```
