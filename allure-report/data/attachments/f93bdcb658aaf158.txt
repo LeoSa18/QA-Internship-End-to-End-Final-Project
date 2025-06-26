@@ -1,0 +1,3 @@
+Update Response: {
+  error: "SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'customer3@practicesoftwaretesting.com' for key 'users.users_email_unique' (Connection: mysql, SQL: update `users` set `first_name` = UpdatedFirstName, `last_name` = UpdatedLastName, `street` = Updated Street 123, `city` = Vienna, `state` = Vienna State, `country` = Austria, `postal_code` = 1010, `phone` = 1234567890, `dob` = 1980-02-02, `email` = customer3@practicesoftwaretesting.com, `users`.`updated_at` = 2025-06-26 13:46:22 where `id` = 01JYP5630H5CZ4Q0Z1YA9P8M8M)"
+}

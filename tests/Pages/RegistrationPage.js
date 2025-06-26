@@ -42,3 +42,5 @@ class RegistrationPage {
         await this.registerButton.click();
     }
 }
+
+module.exports = { RegistrationPage };

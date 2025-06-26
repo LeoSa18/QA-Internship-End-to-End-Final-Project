@@ -1,0 +1,2 @@
+Response Status: 422
+Response Body: { email: [ 'A customer with this email address already exists.' ] }
