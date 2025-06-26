@@ -268,3 +268,44 @@ test('Complete order and reset cart', async ({ page }) => {
   const cartVisible = await checkoutPage.isCartIconVisible();
   await expect(cartVisible).toBe(false); 
 });
+
+/*
+test('Validation message if no payment method is selected', async ({ page }) => {
+  const loginPage = new LogInPage(page);
+  const homePage = new HomePage(page);
+  const productPage = new ProductPage(page);
+  const checkoutPage = new CheckoutPage(page);
+
+  // Paso 1: Login
+  await page.goto('https://practicesoftwaretesting.com/auth/login'); 
+  await loginPage.fillEmail('customer@practicesoftwaretesting.com'); 
+  await loginPage.fillPassword('welcome01');
+  await loginPage.clickLoginButton();
+  await page.waitForTimeout(2000);
+
+  // Paso 2: Agregar producto al carrito
+  await page.goto('https://practicesoftwaretesting.com/');
+  await page.waitForTimeout(2000);
+  await homePage.openProduct();
+  await productPage.clickOnAddToCart();
+  await page.waitForTimeout(5000);
+
+  // Paso 3: Ir al checkout y avanzar hasta Billing Address
+  await page.goto('https://practicesoftwaretesting.com/checkout');  
+  await checkoutPage.proceedFromCart();
+  await checkoutPage.proceedFromSignIn();
+  await page.waitForTimeout(2000);
+
+  // Paso 4: Completar todos los campos obligatorios
+  await checkoutPage.fillAllAddressFields();
+  await page.waitForTimeout(2000);
+  await checkoutPage.proceedFromAddress();
+  
+  // Paso 5: Seleccionar una opción de pago
+  await checkoutPage.selectPaymentMethod('Cash on Delivery');
+  await page.waitForTimeout(1000);
+  await checkoutPage.confirmPayment();
+  await page.waitForTimeout(2000);
+  await expect(checkoutPage.paymentSuccessMessage).toContainText('Payment was successful');
+});
+*/
