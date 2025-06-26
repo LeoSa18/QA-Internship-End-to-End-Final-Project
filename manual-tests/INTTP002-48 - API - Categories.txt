@@ -1,0 +1,49 @@
+Scenario: Fail to create category with invalid or missing data
+    Given the user is logged as an administrator
+    When the admin sends a POST request to "/categories" with <name> and <slug>
+    Then the response status should be 422 with an error <message>
+  Scenario Output:
+    | name            | slug                | message                                                             |
+    |                 |                     | The name field is required.                                         |
+    |                 | electronics         | The name field is required.                                         |
+    | Home & Kitchen  |                     | The slug field is required.                                         |
+    | Gadgets         | @@invalid@@slug     | The slug field must only contain letters, numbers, dashes, and underscores. |
+
+
+Scenario: Fail to update category with invalid or missing data
+    Given the user is logged as an administrator
+    And enters a valid category <id>
+    When the admin sends a PUT request to "/categories/<id>" with <name> and <slug>
+    Then the response status should be 422 with an error <message>
+
+  Scenario Output:
+    | id  | name            | slug              | message                                                             |
+    | 01JYCQ25F0GN5P9KE0Z3CB1V4T   |                 |                   | The name field must be a string.                                        |
+    | 01JYCQ25F0GN5P9KE0Z3CB1V4S  |                 | electronics       | The name field must be a string.                                        |
+    | 01JYCQ25F0GN5P9KE0Z3CB1V4R  | Home & Kitchen  |                   | The slug field must be a string.                                      |
+    | 01JYCQ25F0GN5P9KE0Z3CB1V4Q  | Gadgets         | @@invalid@@slug   | The slug field must only contain letters, numbers, dashes, and underscores. |
+| 01JYCQ25F0GN5P9KE0Z3CB1V4Q | Gaming          | hammer        | Duplicate Entry                                                     |
+
+Scenario: Fail to delete a non-existing category
+Given the user is logged as an administrator
+And enters an invalid category <id>
+When the admin sends a DELETE request to "/categories/<id>"
+Then the response status should be 422 with the message " The selected id is invalid."
+
+    Scenario Output:
+    | id   |
+    | 999  |
+    | 1234 |
+    | 8888 |
+
+Scenario: Fail to update category with invalid ID 
+    Given the user is logged as an administrator
+    And enters an invalid category <id>
+    When the admin sends a PUT request to "/categories/<id>" with <name> and <slug>
+    Then the response status should be 200 with the message “Success: false”
+
+  Scenario Output:
+| id   | name           | slug              |
+    | 999  | Gadgets        | gadgets           |
+    | 1234 | Electronics    | electronics       |
+    | 8888 | Home & Kitchen | home-kitchen      |
