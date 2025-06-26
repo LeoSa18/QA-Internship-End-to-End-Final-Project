@@ -1,0 +1,38 @@
+Create a Message
+As a user, I want to send messages to the platform so I can contact support or make inquiries.
+Scenario: Successfully send a message with all required fields
+   Given the user is not logged
+   And the user fills the <name>, <email>, <subject> and <message>
+   When the user sends a POST request to "/messages"
+   Then the response should be a status 200 with the message “Success”
+Scenario output
+| name    | email   | subject | message |
+| Jane | customer@practicesoftwaretesting.com | website  | Something is wrong with the website.|
+| Jack | customer2@practicesoftwaretesting.com  | website  | Something is wrong with the website.|
+| Bob | customer3@practicesoftwaretesting.com | website | Something is wrong with the website.|
+ 
+Scenario: Fail to send a message when subject is missing
+   Given the user is not logged
+   And the user fills the <name>, <email>, and <message> 
+   But leaves <subject> empty
+   When the user sends a POST request to "/messages"
+   Then the response status should be 422 with an error message “Unprocessable Content”
+ 
+Scenario output
+| name    | email   | subject | message |
+| Jane    | customer@practicesoftwaretesting.com |     null      | Something is wrong with the website.|
+| Jack    | customer2@practicesoftwaretesting.com |      null    | Something is wrong with the website.|
+| Bob     | customer3@practicesoftwaretesting.com |     null     | Something is wrong with the website.|
+ 
+Scenario: Fail to send a message when message is missing
+   Given the user is not logged
+   And the user fills the <name>, <email>, and <subject> 
+   But leaves <message> empty
+   When the user sends a POST request to "/messages"
+   Then the response status should be 422 with an error message “Unprocessable Content”
+ 
+Scenario output
+| name    | email   | subject | message |
+| Jane    | customer@practicesoftwaretesting.com | website |  null  |
+| Jack    | customer2@practicesoftwaretesting.com | website |  null  |
+| Bob     | customer3@practicesoftwaretesting.com | website | null |

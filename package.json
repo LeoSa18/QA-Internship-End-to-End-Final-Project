@@ -21,6 +21,10 @@
   "homepage": "https://github.com/LeoSa18/QA-Internship-End-to-End-Final-Project#readme",
   "devDependencies": {
     "@playwright/test": "^1.53.1",
-    "@types/node": "^24.0.4"
+    "@types/node": "^24.0.4",
+    "allure-playwright": "^3.3.0"
+  },
+  "dependencies": {
+    "form-data": "^4.0.3"
   }
 }

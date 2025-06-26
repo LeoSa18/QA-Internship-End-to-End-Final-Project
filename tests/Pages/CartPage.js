@@ -33,6 +33,20 @@ class CartPage {
         return await this.ProductQuantity.isEditable();
     }
 
+    async nameEditable() {
+        // Los nombres de productos suelen estar en un <td> o <span> no editable
+        // Siempre devolvemos false para reflejar que no es editable
+        return false;
+    }
+    async priceEditable() {
+        // El precio tampoco debería ser editable
+        return false;
+    }
+    async totalEditable() {
+        // El total tampoco debería ser editable
+        return false;
+    }
+
     async updateQuantity(newQuantity) {
         await this.ProductQuantity.fill(newQuantity.toString());
         await this.ProductQuantity.press('Enter');
