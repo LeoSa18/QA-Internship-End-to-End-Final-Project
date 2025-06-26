@@ -11,12 +11,11 @@ Este proyecto fue desarrollado como parte del desafío final del Internship de Q
 
 ## 📁 Estructura del Proyecto
 /manual-tests # Casos de prueba en formato Gherkin 
+/tests/API # Test automatizados de API 
+/tests/Pages # Contiene las Páginas del POM 
+/tests/API # Test automatizados de UI 
 
-/tests/pages # Contiene las Páginas del POM 
-
-## 🚀 Cómo Ejecutar los Tests
-
-### ▶️ Tests de UI
+## ▶️ Cómo Ejecutar los Tests automatizados
 npx playwright test
 
 ## 📊 Generar Reporte Allure
