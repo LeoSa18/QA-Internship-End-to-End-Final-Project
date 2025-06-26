@@ -1,4 +1,4 @@
-class NabBar {
+class NavBar {
     constructor(page) {
         this.page = page;
         this.signinbutton = page.locator('#navbarSupportedContent > ul > li:nth-child(4) > a');
@@ -17,4 +17,4 @@ class NabBar {
     }
 }
 
-module.exports = {NabBar};
+module.exports = {NavBar};
