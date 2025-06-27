@@ -1,0 +1,22 @@
+First page titles: [
+  'Combination Pliers',
+  'Pliers',
+  'Bolt Cutters',
+  'Long Nose Pliers',
+  'Slip Joint Pliers',
+  'Claw Hammer with Shock Reduction Grip',
+  'Hammer',
+  'Claw Hammer',
+  'Thor Hammer'
+]
+Second page titles: [
+  'Sledgehammer',
+  'Claw Hammer with Fiberglass Handle',
+  'Court Hammer',
+  'Wood Saw',
+  'Adjustable Wrench',
+  'Angled Spanner',
+  'Open-end Spanners (Set)',
+  'Phillips Screwdriver',
+  'Mini Screwdriver'
+]

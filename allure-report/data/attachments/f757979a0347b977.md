@@ -1,0 +1,217 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Practice Software Testing - Toolshop":
+    - /url: /
+    - img
+  - menubar "Main menu":
+    - menuitem "Home":
+      - link "Home":
+        - /url: /
+    - menuitem "Categories":
+      - button "Categories"
+    - menuitem "Contact":
+      - link "Contact":
+        - /url: /contact
+    - menuitem "John Doe":
+      - button "John Doe"
+- heading "Sales over the years" [level=1]
+- heading "Latest orders" [level=2]
+- table:
+  - rowgroup:
+    - row "Invoice Number Billing Address Invoice Date Status Total":
+      - columnheader "Invoice Number"
+      - columnheader "Billing Address"
+      - columnheader "Invoice Date"
+      - columnheader "Status"
+      - columnheader "Total"
+      - columnheader
+  - rowgroup:
+    - row "INV-20250000020 Test street 21 2025-06-20 22:00:14 COMPLETED $855.58 Edit":
+      - cell "INV-20250000020"
+      - cell "Test street 21"
+      - cell "2025-06-20 22:00:14"
+      - cell "COMPLETED"
+      - cell "$855.58"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ430E8QMFS64JMPYB13G5W
+    - row "INV-20250000018 Test street 19 2025-06-02 22:00:14 COMPLETED $131.91 Edit":
+      - cell "INV-20250000018"
+      - cell "Test street 19"
+      - cell "2025-06-02 22:00:14"
+      - cell "COMPLETED"
+      - cell "$131.91"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ430CDBTRAAJ88WH75DEEZ
+    - row "INV-20250000019 Test street 20 2025-06-02 22:00:14 COMPLETED $3.95 Edit":
+      - cell "INV-20250000019"
+      - cell "Test street 20"
+      - cell "2025-06-02 22:00:14"
+      - cell "COMPLETED"
+      - cell "$3.95"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ430DX2YAW36QW9FGZ312B
+    - row "INV-20250000017 Test street 18 2025-05-27 22:00:14 COMPLETED $18.34 Edit":
+      - cell "INV-20250000017"
+      - cell "Test street 18"
+      - cell "2025-05-27 22:00:14"
+      - cell "COMPLETED"
+      - cell "$18.34"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ430C2BZ6J3RJB3AWBJ1CT
+    - row "INV-20250000016 Test street 17 2025-05-24 22:00:14 ON_HOLD $227.67 Edit":
+      - cell "INV-20250000016"
+      - cell "Test street 17"
+      - cell "2025-05-24 22:00:14"
+      - cell "ON_HOLD"
+      - cell "$227.67"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ430BT2PM8RQ8S5F0MMKHP
+    - row "INV-20250000015 Test street 16 2025-05-18 22:00:14 COMPLETED $22.96 Edit":
+      - cell "INV-20250000015"
+      - cell "Test street 16"
+      - cell "2025-05-18 22:00:14"
+      - cell "COMPLETED"
+      - cell "$22.96"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ430BC5CC5DNBNG24FN007
+    - row "INV-20250000014 Test street 15 2025-05-09 22:00:14 COMPLETED $39.42 Edit":
+      - cell "INV-20250000014"
+      - cell "Test street 15"
+      - cell "2025-05-09 22:00:14"
+      - cell "COMPLETED"
+      - cell "$39.42"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ430B589JCHMMJB1VXNKDA
+    - row "INV-20250000013 Test street 14 2025-05-05 22:00:14 COMPLETED $113.73 Edit":
+      - cell "INV-20250000013"
+      - cell "Test street 14"
+      - cell "2025-05-05 22:00:14"
+      - cell "COMPLETED"
+      - cell "$113.73"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ430AY4T2471H3BQRH15RD
+    - row "INV-20250000011 Test street 12 2025-04-21 22:00:14 ON_HOLD $886.43 Edit":
+      - cell "INV-20250000011"
+      - cell "Test street 12"
+      - cell "2025-04-21 22:00:14"
+      - cell "ON_HOLD"
+      - cell "$886.43"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ430AC9TN4FJN8VVNFJ5WQ
+    - row "INV-20250000012 Test street 13 2025-04-21 22:00:14 COMPLETED $36.54 Edit":
+      - cell "INV-20250000012"
+      - cell "Test street 13"
+      - cell "2025-04-21 22:00:14"
+      - cell "COMPLETED"
+      - cell "$36.54"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ430AKP6C2GHA7A4NCCV6H
+    - row "INV-20250000010 Test street 11 2025-04-12 22:00:14 COMPLETED $314.87 Edit":
+      - cell "INV-20250000010"
+      - cell "Test street 11"
+      - cell "2025-04-12 22:00:14"
+      - cell "COMPLETED"
+      - cell "$314.87"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ4309WQJAXN5Z72AZE6Y96
+    - row "INV-20250000009 Test street 10 2025-03-29 22:00:14 COMPLETED $550.92 Edit":
+      - cell "INV-20250000009"
+      - cell "Test street 10"
+      - cell "2025-03-29 22:00:14"
+      - cell "COMPLETED"
+      - cell "$550.92"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ4309MHFZY471HK6MJ8M7Y
+    - row "INV-20250000008 Test street 9 2025-03-24 22:00:14 COMPLETED $1258.31 Edit":
+      - cell "INV-20250000008"
+      - cell "Test street 9"
+      - cell "2025-03-24 22:00:14"
+      - cell "COMPLETED"
+      - cell "$1258.31"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ43095W38KRWVFM7ZQS3Q7
+    - row "INV-20250000007 Test street 8 2025-03-18 22:00:14 COMPLETED $851.59 Edit":
+      - cell "INV-20250000007"
+      - cell "Test street 8"
+      - cell "2025-03-18 22:00:14"
+      - cell "COMPLETED"
+      - cell "$851.59"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ4308TT0DST3KTMB3GETS5
+    - row "INV-20250000006 Test street 7 2025-02-26 22:00:14 ON_HOLD $281.13 Edit":
+      - cell "INV-20250000006"
+      - cell "Test street 7"
+      - cell "2025-02-26 22:00:14"
+      - cell "ON_HOLD"
+      - cell "$281.13"
+      - cell "Edit":
+        - link "Edit":
+          - /url: /admin/orders/edit/01JYQ4308FRETRH16VM0C4DQVC
+- navigation:
+  - list:
+    - listitem:
+      - button "Previous"
+    - listitem:
+      - button "Page-1": "1"
+    - listitem:
+      - button "Page-2": "2"
+    - listitem:
+      - button "Page-3": "3"
+    - listitem:
+      - button "Page-4": "4"
+    - listitem:
+      - button "Page-5": "5"
+    - listitem:
+      - button "Page-6": "6"
+    - listitem:
+      - button "Page-7": "7"
+    - listitem:
+      - button "Page-8": "8"
+    - listitem:
+      - button "Page-9": "9"
+    - listitem:
+      - button "Page-10": "10"
+    - listitem:
+      - button "Page-11": "11"
+    - listitem:
+      - button "Page-12": "12"
+    - listitem:
+      - button "Page-13": "13"
+    - listitem:
+      - button "Page-14": "14"
+    - listitem:
+      - button "Next"
+- paragraph:
+  - text: This is a DEMO application (
+  - link "GitHub repo":
+    - /url: https://github.com/testsmith-io/practice-software-testing
+  - text: ), used for software testing training purpose. |
+  - link "Support this project":
+    - /url: https://testwithroy.com/b/support
+  - text: "|"
+  - link "Privacy Policy":
+    - /url: /privacy
+  - text: "| Banner photo by"
+  - link "Barn Images":
+    - /url: https://unsplash.com/@barnimages
+  - text: "on"
+  - link "Unsplash":
+    - /url: https://unsplash.com/photos/t5YUoHW6zRo
+  - text: .
+```

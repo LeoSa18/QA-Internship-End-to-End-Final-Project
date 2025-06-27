@@ -1,0 +1,17 @@
+Response Status: 201
+Response Body: {
+  first_name: 'John',
+  last_name: 'Doe',
+  email: 'john.doe778la@example.com',
+  phone: '0987654321',
+  dob: '1970-01-01',
+  id: '01jyq5thhv1t7ravps1nw3aa79',
+  created_at: '2025-06-26 22:30:37',
+  address: {
+    street: 'Street 1',
+    city: 'City',
+    state: 'State',
+    country: 'Country',
+    postal_code: '1234AA'
+  }
+}

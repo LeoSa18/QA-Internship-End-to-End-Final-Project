@@ -26,5 +26,8 @@
   },
   "dependencies": {
     "form-data": "^4.0.3"
+  },
+  "overrides": {
+    "@playwright/test": "^1.53.1"
   }
 }

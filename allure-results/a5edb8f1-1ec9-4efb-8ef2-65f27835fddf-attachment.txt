@@ -1,0 +1,5 @@
+Response: {
+  name: 'new-brand-1750977033105',
+  slug: 'new-brand-1750977033105',
+  id: '01jyq5tdtan2nzxa3d6x9tefb6'
+}
