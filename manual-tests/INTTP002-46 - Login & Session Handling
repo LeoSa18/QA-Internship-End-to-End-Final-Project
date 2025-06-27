@@ -1,0 +1,35 @@
+Scenario: User submits login form with missing required fields 
+    Given the user is on the Login page
+    When the user enters <email> in the email field and <password> in the password field
+    And the user clicks the “Login” button
+    Then the user should see <message> 
+
+    Scenario output
+    | email | password | message |
+    | null | null | Email and Password are required. |
+    | customer@practicesoftwaretesting.com | null | Password is required. |
+    | null | welcome01 | Email is required. |
+
+Scenario: User submits login form with invalid email or password formats 
+    Given the user is on the Login page
+    When the user enters <email> in the email field and <password> in the password field
+    And the user clicks the “Login” button
+    Then the user should see <message> 
+
+    Scenario output
+    | email | password | message |
+    | example | welcome01 | Invalid email format. |
+    | example@ | welcome01 | Invalid email format. |
+    | example@practice.com | 12 | Invalid password length. |
+
+  
+Scenario: User session persists after 30 minutes of inactivity
+    Given the user is logged in
+    And the user is inactive for 30 minutes
+    When the user accesses a protected page
+    Then the user should still see its name displayed in the navigation bar
+
+Scenario: User session expires after exceeding inactivity limit
+    Given the user is logged in
+    And the user is inactive for more than 30 minutes
+    Then the user should see the Login button displayed on the header between Contact and Language

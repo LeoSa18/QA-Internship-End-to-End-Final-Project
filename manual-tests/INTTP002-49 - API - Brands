@@ -1,0 +1,44 @@
+Scenario: Fail to create a brand when fields are empty
+    Given the admin is logged in
+    And the admin leaves <field> field empty
+    When the admin sends a POST request to “/brands” 
+    Then the response should be a status code 400 with an error message <message>
+
+    Scenario output
+    | field | message |
+    | name | Name is required. |
+    | slug | Slug is required. |
+
+
+Scenario: Fail to delete a brand with invalid ID
+    Given the admin is logged in
+    When the admin sends a DELETE request to “/brands/<brandId>” 
+    And the ID <brandId> does not exist
+    Then the response should be a status code 404 with an error message <message>
+
+    Scenario output
+    | brandId | message |
+    | 111 | Requested item not found. |
+    | 123456 | Requested item not found. |
+
+Scenario: Not authorized user tries to delete a brand
+    Given the user is not logged as an administrator
+    When the user sends a DELETE request to “/brands/<brandId>”
+    Then the response should be a status 401 with an error message <message>
+
+    Scenario output
+    | brandId | message |
+    | 01JY6XNEB23PXNPH6Z3ZZZAYKS | Unauthorized. |
+    | 1223456 | Unauthorized. |
+
+
+Scenario: Fail to delete a brand with invalid ID
+    Given the admin is logged in
+    When the admin sends a DELETE request to “/brands/<brandId>” 
+    And the ID <brandId> does not exist
+    Then the response should be a status code 404 with an error message <message>
+
+    Scenario output
+    | brandId | message |
+    | 111 | Requested item not found. |
+    | 123456 | Requested item not found. |
