@@ -1,0 +1,82 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Practice Software Testing - Toolshop":
+    - /url: /
+    - img
+  - menubar "Main menu":
+    - menuitem "Home":
+      - link "Home":
+        - /url: /
+    - menuitem "Categories":
+      - button "Categories"
+    - menuitem "Contact":
+      - link "Contact":
+        - /url: /contact
+    - menuitem "Sign in":
+      - link "Sign in":
+        - /url: /auth/login
+- figure "Photo by Michael Dziedzic on Unsplash.":
+  - img "Bolt Cutters"
+  - text: Photo by
+  - link "Michael Dziedzic":
+    - /url: https://unsplash.com/@lazycreekimages
+  - text: "on"
+  - link "Unsplash":
+    - /url: https://unsplash.com/photos/pM9pkc9J918
+  - text: .
+- heading "Bolt Cutters" [level=1]
+- paragraph: Pliers MightyCraft Hardware
+- text: $48.41
+- paragraph: Aliquam viverra scelerisque tempus. Ut vehicula, ex sed elementum rhoncus, sem neque vehicula turpis, sit amet accumsan mauris justo non magna. Cras ut vulputate lectus, sit amet sollicitudin enim. Quisque sit amet turpis ut orci pulvinar vestibulum non at velit. Quisque ultrices malesuada felis non rutrum. Sed molestie lobortis nisl, in varius arcu dictum vel. In sit amet fringilla orci. Quisque ac magna dui. Nam pulvinar nulla sed commodo ultricies. Suspendisse aliquet quis eros sit amet gravida. Aenean vitae arcu in sapien sodales commodo.
+- button "Decrease quantity"
+- text: Quantity
+- spinbutton "Quantity": "2"
+- button "Increase quantity"
+- button "Add to cart"
+- button "Add to favourites"
+- separator
+- heading "Related products" [level=2]
+- link "Combination Pliers Combination Pliers More information":
+  - /url: /product/01JYQ7GNGWV4KMQJGR89DXMNTN
+  - img "Combination Pliers"
+  - heading "Combination Pliers" [level=5]
+  - link "More information":
+    - /url: "#"
+- link "Pliers Pliers More information":
+  - /url: /product/01JYQ7GNH0S3EM66ARYD7SNQB3
+  - img "Pliers"
+  - heading "Pliers" [level=5]
+  - link "More information":
+    - /url: "#"
+- link "Long Nose Pliers Long Nose Pliers More information":
+  - /url: /product/01JYQ7GNH31VJSX36H7085TVSJ
+  - img "Long Nose Pliers"
+  - heading "Long Nose Pliers" [level=5]
+  - link "More information":
+    - /url: "#"
+- link "Slip Joint Pliers Slip Joint Pliers More information":
+  - /url: /product/01JYQ7GNH4XN2JGNZ0FZEXF095
+  - img "Slip Joint Pliers"
+  - heading "Slip Joint Pliers" [level=5]
+  - link "More information":
+    - /url: "#"
+- paragraph:
+  - text: This is a DEMO application (
+  - link "GitHub repo":
+    - /url: https://github.com/testsmith-io/practice-software-testing
+  - text: ), used for software testing training purpose. |
+  - link "Support this project":
+    - /url: https://testwithroy.com/b/support
+  - text: "|"
+  - link "Privacy Policy":
+    - /url: /privacy
+  - text: "| Banner photo by"
+  - link "Barn Images":
+    - /url: https://unsplash.com/@barnimages
+  - text: "on"
+  - link "Unsplash":
+    - /url: https://unsplash.com/photos/t5YUoHW6zRo
+  - text: .
+```
