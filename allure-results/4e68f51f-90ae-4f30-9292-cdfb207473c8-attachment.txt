@@ -1,2 +1,0 @@
-Response Status: 422
-Response Body: { first_name: [ 'The first name field is required.' ] }

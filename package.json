@@ -6,12 +6,7 @@
   "directories": {
     "test": "tests"
   },
-  "scripts": {
-    "test": "cucumber-js",
-    "test:chrome": "npx playwright test --project=Chromium",
-    "test:firefox": "npx playwright test --project=Firefox",
-    "test:webkit": "npx playwright test --project=WebKit"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LeoSa18/QA-Internship-End-to-End-Final-Project.git"
@@ -25,12 +20,9 @@
   },
   "homepage": "https://github.com/LeoSa18/QA-Internship-End-to-End-Final-Project#readme",
   "devDependencies": {
-    "@cucumber/cucumber": "^11.3.0",
-    "@playwright/test": "^1.53.2",
+    "@playwright/test": "^1.53.1",
     "@types/node": "^24.0.4",
-    "allure-playwright": "^3.3.0",
-    "cucumber-html-reporter": "^6.0.0",
-    "playwright": "^1.53.2"
+    "allure-playwright": "^3.3.0"
   },
   "dependencies": {
     "form-data": "^4.0.3"

@@ -1,5 +1,0 @@
-Response: {
-  name: 'new-brand-1750982237398',
-  slug: 'new-brand-1750982237398',
-  id: '01jyqas83bya2xd8z07ja62w95'
-}
