@@ -1,0 +1,1 @@
+Delete without auth correctly failed with 401 for category: 01jyqas9rqzegarked7nkfx4bz

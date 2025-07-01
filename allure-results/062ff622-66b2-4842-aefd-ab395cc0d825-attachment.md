@@ -1,0 +1,63 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Practice Software Testing - Toolshop":
+    - /url: /
+    - img
+  - menubar "Main menu":
+    - menuitem "Home":
+      - link "Home":
+        - /url: /
+    - menuitem "Categories":
+      - button "Categories"
+    - menuitem "Contact":
+      - link "Contact":
+        - /url: /contact
+    - menuitem "Sign in":
+      - link "Sign in":
+        - /url: /auth/login
+- separator
+- heading "Related products" [level=2]
+- link "Pliers Pliers More information":
+  - /url: /product/01JYQ7GNH0S3EM66ARYD7SNQB3
+  - img "Pliers"
+  - heading "Pliers" [level=5]
+  - link "More information":
+    - /url: "#"
+- link "Bolt Cutters Bolt Cutters More information":
+  - /url: /product/01JYQ7GNH1ANFKSY5X62VT8DTT
+  - img "Bolt Cutters"
+  - heading "Bolt Cutters" [level=5]
+  - link "More information":
+    - /url: "#"
+- link "Long Nose Pliers Long Nose Pliers More information":
+  - /url: /product/01JYQ7GNH31VJSX36H7085TVSJ
+  - img "Long Nose Pliers"
+  - heading "Long Nose Pliers" [level=5]
+  - link "More information":
+    - /url: "#"
+- link "Slip Joint Pliers Slip Joint Pliers More information":
+  - /url: /product/01JYQ7GNH4XN2JGNZ0FZEXF095
+  - img "Slip Joint Pliers"
+  - heading "Slip Joint Pliers" [level=5]
+  - link "More information":
+    - /url: "#"
+- paragraph:
+  - text: This is a DEMO application (
+  - link "GitHub repo":
+    - /url: https://github.com/testsmith-io/practice-software-testing
+  - text: ), used for software testing training purpose. |
+  - link "Support this project":
+    - /url: https://testwithroy.com/b/support
+  - text: "|"
+  - link "Privacy Policy":
+    - /url: /privacy
+  - text: "| Banner photo by"
+  - link "Barn Images":
+    - /url: https://unsplash.com/@barnimages
+  - text: "on"
+  - link "Unsplash":
+    - /url: https://unsplash.com/photos/t5YUoHW6zRo
+  - text: .
+```
