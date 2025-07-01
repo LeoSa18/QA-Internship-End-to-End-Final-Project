@@ -13,6 +13,7 @@ async function getProductIdByTerm(term, request, baseUrl) {
     return product.data[0]?.id;
 }
 
+
 test.describe('Add to Cart Tests', () => {
 
     const validScenarios = [

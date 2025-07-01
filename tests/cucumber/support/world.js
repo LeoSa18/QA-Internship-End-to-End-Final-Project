@@ -1,23 +1,24 @@
 const { setWorldConstructor, Before, After } = require('@cucumber/cucumber');
 const { chromium, firefox, webkit } = require('@playwright/test');
- 
+
 const browserTypes = {
   chromium,
   chrome: chromium,
   firefox,
   webkit
 };
- 
+
 class CustomWorld {
   constructor() {
     this.browser = null;
     this.context = null;
     this.page = null;
+    this.baseURL = process.env.BASE_URL || 'https://practicesoftwaretesting.com';
   }
 }
- 
+
 setWorldConstructor(CustomWorld);
- 
+
 Before(async function () {
   // default to chromium if nothing specified
   const name = (process.env.BROWSER || 'chromium').toLowerCase();
@@ -29,7 +30,7 @@ Before(async function () {
   this.context = await this.browser.newContext();
   this.page = await this.context.newPage();
 });
- 
+
 After(async function () {
   await this.page?.close();
   await this.context?.close();

@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-const { HomePage } = require('./Pages/HomePage');
+const { HomePage } = require('../Pages/HomePage');
 // Feature: Product listing
 // Scenario: Display product with name, price and image
 // Given the shopper is on the home page

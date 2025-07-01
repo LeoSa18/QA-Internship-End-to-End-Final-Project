@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
 import { allure } from 'allure-playwright';
-import { HomePage } from './Pages/HomePage';
-import { LogInPage } from './Pages/LogInPage';
-import { RegistrationPage } from './Pages/RegistrationPage';
-import {NavBar} from './Pages/NavBar';
+import { HomePage } from '../Pages/HomePage';
+import { LogInPage } from '../Pages/LogInPage';
+import { RegistrationPage } from '../Pages/RegistrationPage';
+import {NavBar} from '../Pages/NavBar';
 
 
 test ('Navigate to Registration Page', async ({ page }) => {

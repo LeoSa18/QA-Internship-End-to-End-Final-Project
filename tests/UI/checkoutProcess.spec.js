@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
-const { HomePage } = require('./Pages/HomePage');
-const { CheckoutPage } = require('./Pages/CheckoutPage');
-const { ProductPage } = require('./Pages/ProductPage');
-const { LogInPage } = require('./Pages/LoginPage');
+const { HomePage } = require('../Pages/HomePage');
+const { CheckoutPage } = require('../Pages/CheckoutPage');
+const { ProductPage } = require('../Pages/ProductPage');
+const { LogInPage } = require('../Pages/LoginPage');
 
 test('Display "Proceed to checkout" button', async ({ page }) => {
   await page.goto('https://practicesoftwaretesting.com/');

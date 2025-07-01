@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
-import { HomePage } from './Pages/HomePage';
-import { ProductPage } from './Pages/ProductPage';
-import { CartPage } from './Pages/CartPage';
-import { NavBar } from './Pages/NavBar';
+import { HomePage } from '../Pages/HomePage';
+import { ProductPage } from '../Pages/ProductPage';
+import { CartPage } from '../Pages/CartPage';
+import { NavBar } from '../Pages/NavBar';
 
 test('Cart not visible before adding items', async ({ page }) => {
     await page.goto('https://practicesoftwaretesting.com/');
