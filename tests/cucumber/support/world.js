@@ -20,12 +20,13 @@ class CustomWorld {
 setWorldConstructor(CustomWorld);
 
 Before(async function () {
-  // default to chromium if nothing specified
   const name = (process.env.BROWSER || 'chromium').toLowerCase();
   const launcher = browserTypes[name];
+
   if (!launcher) {
     throw new Error(`Unknown BROWSER "${name}". Valid options are: ${Object.keys(browserTypes).join(', ')}`);
   }
+
   this.browser = await launcher.launch({ headless: false });
   this.context = await this.browser.newContext();
   this.page = await this.context.newPage();
